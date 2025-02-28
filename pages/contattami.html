@@ -7,27 +7,40 @@
 <link rel="stylesheet" type="text/css" href="../stylesheet/external.css">
 </head>
 <body>
-	<header>
-		<a href="../index.html">Homepage</a> <a href="chisono.html">Chi sono</a> <a href="progetti.html">Progetti</a> <a
-			href="#"
-		>Contattami</a>
+	<header class="headerForm">
+		<form action="../index.html">
+			<input type="submit" value="Homepage" />
+		</form>
+		<form action="chisono.html">
+			<input type="submit" value="Chi sono" />
+		</form>
+		<form action="progetti.html">
+			<input type="submit" value="Progetti" />
+		</form>
+		<form action="#">
+			<input type="submit" value="Contattami" />
+		</form>
 	</header>
 
 	<h1 class="centered">Contattami</h1>
-	
-	<p>Per contattarmi compilare il seguente form:</p>
-	<form action="">
-		<label for="input-email">E-mail : </label> <input id="input-email" name="email" type="email"> <br> <br>
-		<label for="input-nome">Nome : </label> <input id="input-nome" name="nome" type="text"> <br> <br> <label
-			for="input-cognome"
-		>Cognome : </label> <input id="input-cognome" name="cognome" type="text"> <br> <br> <label
-			for="input-testo-contatto" style="display: block;"
-		>Richiesta:</label>
-		<textarea id="input-testo-contatto" rows="10" cols="30"></textarea>
-		<br> <br> <input type="submit" value="Invia">
+
+	<p class="centered">Per contattarmi compilare il seguente form:</p>
+	<form action="#" class="contact-form">
+		<label for="input-email">E-mail:</label> <input id="input-email" name="email" type="email" required> <label
+			for="input-nome"
+		>Nome:</label> <input id="input-nome" name="nome" type="text" required> <label for="input-cognome">Cognome:</label>
+		<input id="input-cognome" name="cognome" type="text" required> <label for="input-testo-contatto">Richiesta:</label>
+		<textarea id="input-testo-contatto" name="richiesta" rows="5" required></textarea>
+
+		<input type="submit" value="Invia">
 	</form>
-	
-	<p>Oppure scrivere alla seguente e-mail(<a href="mailto:matteo.pauroso@gmail.com">matteo.pauroso@gmail.com</a>) o su <a href="https://www.linkedin.com/in/matteo-pauroso-68286a27a/">Linkedin</a> </p>
+
+
+	<p>
+		Oppure scrivere alla seguente e-mail(<a href="mailto:matteo.pauroso@gmail.com">matteo.pauroso@gmail.com</a>) o su <a
+			href="https://www.linkedin.com/in/matteo-pauroso-68286a27a/"
+		>Linkedin</a>
+	</p>
 
 	<footer class="centered">
 		<p>

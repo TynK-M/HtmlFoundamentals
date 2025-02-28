@@ -17,5 +17,124 @@ header {
 }
 
 body {
-    font-family: 'JetBrains Mono', monospace; 
+	background-color: #121212;
+	color: #e0e0e0;
+	font-family: JetBrains Mono, monospace;
+}
+
+.headerForm form {
+	margin: 0;
+}
+
+.headerForm input[type="submit"] {
+	background: linear-gradient(90deg, rgba(80, 5, 108, 1) 0%,
+		rgba(109, 17, 142, 1) 36%, rgba(153, 15, 203, 1) 100%);
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-family: JetBrains Mono, monospace;
+	border-radius: 25px;
+	transition: background 0.3s;
+}
+
+.headerForm input[type="submit"]:hover {
+	background: linear-gradient(90deg, rgba(80, 5, 108, 1) 40%,
+		rgba(109, 17, 142, 1) 100%, rgba(153, 15, 203, 1) 100%);
+	transform: scale(1.05);
+}
+
+a {
+	color: #00bcd4;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+a:hover {
+	color: #0097a7;
+}
+
+.purpleTable {
+	margin: 0px auto;
+	overflow: auto;
+	width: 100%;
+}
+
+.purpleTable table {
+	border: 10px solid #ffffff;
+	height: 100%;
+	width: 100%;
+	table-layout: auto;
+	border-collapse: collapse;
+	border-spacing: 1px;
+	text-align: center;
+}
+
+.purpleTable th {
+	border: 1px solid #ffffff;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 5px;
+}
+
+.purpleTable td {
+	border: 1px solid #ffffff;
+	background-color: #50056c;
+	color: #ffffff;
+	padding: 5px;
+	text-align: center;
+}
+
+.contact-form {
+	max-width: 400px;
+	margin: 30px auto;
+	padding: 20px;
+	background: #1e1e1e;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+}
+
+.contact-form label {
+	display: block;
+	font-size: 14px;
+	color: #e0e0e0;
+	margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+	width: 100%;
+	max-width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #444;
+	background: #333;
+	color: #fff;
+	border-radius: 5px;
+	font-family: JetBrains Mono, monospace;
+	box-sizing: border-box;
+}
+
+.contact-form textarea {
+	resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+	background: linear-gradient(90deg, rgba(80, 5, 108, 1) 0%,
+		rgba(109, 17, 142, 1) 36%, rgba(153, 15, 203, 1) 100%);
+	color: white;
+	border: none;
+	padding: 12px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 15px;
+	border-radius: 5px;
+	transition: background 0.3s, transform 0.2s;
+	width: 100%;
+}
+
+.contact-form input[type="submit"]:hover {
+	background: linear-gradient(90deg, rgba(80, 5, 108, 1) 40%,
+		rgba(109, 17, 142, 1) 100%, rgba(153, 15, 203, 1) 100%);
+	transform: scale(1.05);
 }
